@@ -40,6 +40,10 @@ const CartItem = ({ onContinueShopping }) => {
     return Number(item.cost.slice(1)) * item.quantity;
   };
 
+  const handleCheckout = () => {
+    alert("Processing Checkout");
+  };
+
   return (
     <div className="cart-container">
       <h2 style={{ color: "black" }}>
@@ -94,7 +98,9 @@ const CartItem = ({ onContinueShopping }) => {
           Continue Shopping
         </button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button className="get-started-button1" onClick={handleCheckout}>
+          Checkout
+        </button>
       </div>
     </div>
   );
