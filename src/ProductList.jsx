@@ -341,17 +341,17 @@ function ProductList() {
                   ></path>
                 </svg>
               </h1>
+              <h2
+                style={{
+                  position: "absolute",
+                  left: "50%",
+                  top: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
+              >
+                {Object.keys(addedToCart).length}
+              </h2>
             </a>
-            <h1
-              style={{
-                position: "absolute",
-                left: "50%",
-                top: "50%",
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-              {Object.keys(addedToCart).length}
-            </h1>
           </div>
         </div>
       </div>
